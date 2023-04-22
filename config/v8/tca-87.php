@@ -60,4 +60,5 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->rule(MigrateLastPiecesOfDefaultExtrasRector::class);
     $rectorConfig->rule(MoveTypeGroupSuggestWizardToSuggestOptionsRector::class);
     $rectorConfig->rule(MigrateSpecialConfigurationAndRemoveShowItemStylePointerConfigRector::class);
+    $rectorConfig->rule(\Ssch\TYPO3Rector\Rector\v8\v7\tca\RemoveL10nCatRector::class);
 };
